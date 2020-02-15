@@ -17,7 +17,7 @@ gevent==1.1.2
 greenlet==0.4.10
 jmespath==0.9.0
 leveldb==0.193
-lxml==3.6.0
+lxml
 lru-dict==1.1.3
 marisa-trie==0.7.2
 numpy==1.10.4
@@ -34,4 +34,4 @@ s3transfer==0.1.3
 six==1.10.0
 ujson==1.35
 urlnorm==1.1.3
-wsgiref==0.1.2
+#wsgiref==0.1.2
