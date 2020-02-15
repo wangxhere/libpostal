@@ -27,21 +27,21 @@ from functools import partial
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.coordinates.conversion import latlon_to_decimal
-from geodata.countries.constants import Countries
-from geodata.encoding import safe_decode
-from geodata.file_utils import ensure_dir, download_file
-from geodata.i18n.unicode_properties import get_chars_by_script
-from geodata.i18n.languages import *
-from geodata.i18n.word_breaks import ideographic_scripts
-from geodata.names.deduping import NameDeduper
-from geodata.osm.extract import parse_osm, osm_type_and_id, NODE, WAY, RELATION, OSM_NAME_TAGS
-from geodata.osm.admin_boundaries import *
-from geodata.polygons.index import *
-from geodata.statistics.tf_idf import IDFIndex
+from geodata3.coordinates.conversion import latlon_to_decimal
+from geodata3.countries.constants import Countries
+from geodata3.encoding import safe_decode
+from geodata3.file_utils import ensure_dir, download_file
+from geodata3.i18n.unicode_properties import get_chars_by_script
+from geodata3.i18n.languages import *
+from geodata3.i18n.word_breaks import ideographic_scripts
+from geodata3.names.deduping import NameDeduper
+from geodata3.osm.extract import parse_osm, osm_type_and_id, NODE, WAY, RELATION, OSM_NAME_TAGS
+from geodata3.osm.admin_boundaries import *
+from geodata3.polygons.index import *
+from geodata3.statistics.tf_idf import IDFIndex
 
-from geodata.text.tokenize import tokenize, token_types
-from geodata.text.normalize import *
+from geodata3.text.tokenize import tokenize, token_types
+from geodata3.text.normalize import *
 
 from shapely.topology import TopologicalError
 

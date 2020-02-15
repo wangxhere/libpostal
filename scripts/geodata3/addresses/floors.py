@@ -1,12 +1,12 @@
 import random
 import six
 
-from geodata.addresses.config import address_config
+from geodata3.addresses.config import address_config
 
-from geodata.addresses.numbering import NumberedComponent, sample_alphabet, latin_alphabet
-from geodata.encoding import safe_decode
-from geodata.math.sampling import weighted_choice, zipfian_distribution, cdf
-from geodata.numbers.spellout import numeric_expressions
+from geodata3.addresses.numbering import NumberedComponent, sample_alphabet, latin_alphabet
+from geodata3.encoding import safe_decode
+from geodata3.math.sampling import weighted_choice, zipfian_distribution, cdf
+from geodata3.numbers.spellout import numeric_expressions
 
 
 class Floor(NumberedComponent):

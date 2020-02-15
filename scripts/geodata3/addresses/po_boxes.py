@@ -1,10 +1,10 @@
 import random
 import six
 
-from geodata.addresses.config import address_config
-from geodata.addresses.numbering import NumberedComponent, Digits, sample_alphabet, latin_alphabet
-from geodata.encoding import safe_decode
-from geodata.math.sampling import cdf, weighted_choice
+from geodata3.addresses.config import address_config
+from geodata3.addresses.numbering import NumberedComponent, Digits, sample_alphabet, latin_alphabet
+from geodata3.encoding import safe_decode
+from geodata3.math.sampling import cdf, weighted_choice
 
 
 class POBox(NumberedComponent):

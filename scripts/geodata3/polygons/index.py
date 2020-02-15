@@ -13,7 +13,7 @@ from shapely.geometry import Point, Polygon, MultiPolygon
 from shapely.prepared import prep
 from shapely.geometry.geo import mapping
 
-from geodata.polygons.area import polygon_bounding_box_area
+from geodata3.polygons.area import polygon_bounding_box_area
 
 DEFAULT_POLYS_FILENAME = 'polygons.geojson'
 DEFAULT_PROPS_FILENAME = 'properties.json'

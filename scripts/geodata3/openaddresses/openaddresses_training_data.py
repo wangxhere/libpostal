@@ -17,13 +17,13 @@ shapely_geos_logger.setLevel(logging.CRITICAL)
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.openaddresses.formatter import OpenAddressesFormatter
+from geodata3.openaddresses.formatter import OpenAddressesFormatter
 
-from geodata.addresses.components import AddressComponents
-from geodata.polygons.language_polys import LanguagePolygonIndex
-from geodata.neighborhoods.reverse_geocode import NeighborhoodReverseGeocoder
-from geodata.places.reverse_geocode import PlaceReverseGeocoder
-from geodata.polygons.reverse_geocode import OSMReverseGeocoder, OSMCountryReverseGeocoder
+from geodata3.addresses.components import AddressComponents
+from geodata3.polygons.language_polys import LanguagePolygonIndex
+from geodata3.neighborhoods.reverse_geocode import NeighborhoodReverseGeocoder
+from geodata3.places.reverse_geocode import PlaceReverseGeocoder
+from geodata3.polygons.reverse_geocode import OSMReverseGeocoder, OSMCountryReverseGeocoder
 
 
 if __name__ == '__main__':

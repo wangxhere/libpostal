@@ -1,10 +1,10 @@
 from collections import namedtuple
 
-from geodata.addresses.config import address_config
-from geodata.categories.config import category_config
-from geodata.categories.preposition import CategoryPreposition
-from geodata.encoding import safe_decode
-from geodata.math.sampling import weighted_choice
+from geodata3.addresses.config import address_config
+from geodata3.categories.config import category_config
+from geodata3.categories.preposition import CategoryPreposition
+from geodata3.encoding import safe_decode
+from geodata3.math.sampling import weighted_choice
 
 CategoryQuery = namedtuple('CategoryQuery', 'category, prep, add_place_name, add_address')
 

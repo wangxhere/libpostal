@@ -1,10 +1,10 @@
-from geodata.addresses.config import address_config
+from geodata3.addresses.config import address_config
 
 import random
 
-from geodata.addresses.config import address_config
-from geodata.addresses.numbering import NumericPhrase 
-from geodata.encoding import safe_decode
+from geodata3.addresses.config import address_config
+from geodata3.addresses.numbering import NumericPhrase
+from geodata3.encoding import safe_decode
 
 
 class MetroStationPhrase(NumericPhrase):

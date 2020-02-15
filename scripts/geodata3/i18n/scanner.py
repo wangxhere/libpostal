@@ -5,7 +5,7 @@ import sys
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.encoding import safe_decode
+from geodata3.encoding import safe_decode
 
 class Scanner(object):
     '''

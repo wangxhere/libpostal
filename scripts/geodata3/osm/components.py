@@ -5,10 +5,10 @@ import yaml
 
 from copy import deepcopy
 
-from geodata.address_formatting.formatter import AddressFormatter
-from geodata.configs.utils import recursive_merge, DoesNotExist
+from geodata3.address_formatting.formatter import AddressFormatter
+from geodata3.configs.utils import recursive_merge, DoesNotExist
 
-from geodata.encoding import safe_encode
+from geodata3.encoding import safe_encode
 
 this_dir = os.path.realpath(os.path.dirname(__file__))
 

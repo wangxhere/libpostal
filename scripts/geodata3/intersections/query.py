@@ -1,7 +1,7 @@
 from collections import namedtuple
 
-from geodata.addresses.config import address_config
-from geodata.math.sampling import weighted_choice
+from geodata3.addresses.config import address_config
+from geodata3.math.sampling import weighted_choice
 
 IntersectionQuery = namedtuple('IntersectionQuery', 'road1, intersection_phrase, road2')
 

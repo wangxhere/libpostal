@@ -2,7 +2,7 @@ import bisect
 import random
 import sys
 
-from geodata.math.floats import isclose, FLOAT_EPSILON
+from geodata3.math.floats import isclose, FLOAT_EPSILON
 
 
 def weighted_choice(values, cdf):

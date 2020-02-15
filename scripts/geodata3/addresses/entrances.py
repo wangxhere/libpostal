@@ -1,16 +1,16 @@
 import random
 import six
 
-from geodata.addresses.config import address_config
-from geodata.addresses.numbering import NumberedComponent
-from geodata.encoding import safe_decode
+from geodata3.addresses.config import address_config
+from geodata3.addresses.numbering import NumberedComponent
+from geodata3.encoding import safe_decode
 
-from geodata.configs.utils import nested_get
-from geodata.addresses.directions import RelativeDirection
-from geodata.addresses.floors import Floor
-from geodata.addresses.numbering import NumberedComponent, Digits, sample_alphabet, latin_alphabet
-from geodata.encoding import safe_decode
-from geodata.math.sampling import weighted_choice, zipfian_distribution, cdf
+from geodata3.configs.utils import nested_get
+from geodata3.addresses.directions import RelativeDirection
+from geodata3.addresses.floors import Floor
+from geodata3.addresses.numbering import NumberedComponent, Digits, sample_alphabet, latin_alphabet
+from geodata3.encoding import safe_decode
+from geodata3.math.sampling import weighted_choice, zipfian_distribution, cdf
 
 
 class Entrance(NumberedComponent):

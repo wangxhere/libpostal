@@ -27,7 +27,7 @@ import time
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(this_dir, os.pardir, os.pardir)))
 
-from geodata.encoding import safe_decode, safe_encode
+from geodata3.encoding import safe_decode, safe_encode
 
 DEFAULT_CATEGORIES_DIR = os.path.join(this_dir, os.pardir, os.pardir, os.pardir,
                                       'resources', 'categories')

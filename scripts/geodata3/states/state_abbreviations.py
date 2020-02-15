@@ -8,8 +8,8 @@ from collections import defaultdict
 
 this_dir = os.path.realpath(os.path.dirname(__file__))
 
-from geodata.configs.utils import nested_get, DoesNotExist
-from geodata.encoding import safe_decode
+from geodata3.configs.utils import nested_get, DoesNotExist
+from geodata3.encoding import safe_decode
 
 
 STATE_DIR = os.path.join(this_dir, os.pardir, os.pardir, os.pardir,

@@ -2,10 +2,10 @@ import random
 import re
 import six
 
-from geodata.address_expansions.gazetteers import *
-from geodata.encoding import safe_decode, safe_encode
-from geodata.text.tokenize import tokenize_raw, token_types
-from geodata.text.utils import non_breaking_dash_regex
+from geodata3.address_expansions.gazetteers import *
+from geodata3.encoding import safe_decode, safe_encode
+from geodata3.text.tokenize import tokenize_raw, token_types
+from geodata3.text.utils import non_breaking_dash_regex
 
 
 LOWER, UPPER, TITLE, MIXED = list(range(4))

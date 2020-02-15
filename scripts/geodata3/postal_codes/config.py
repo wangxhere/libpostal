@@ -7,9 +7,9 @@ import yaml
 
 from collections import defaultdict
 
-from geodata.address_expansions.address_dictionaries import address_phrase_dictionaries
-from geodata.address_formatting.formatter import AddressFormatter
-from geodata.configs.utils import nested_get, recursive_merge
+from geodata3.address_expansions.address_dictionaries import address_phrase_dictionaries
+from geodata3.address_formatting.formatter import AddressFormatter
+from geodata3.configs.utils import nested_get, recursive_merge
 
 
 this_dir = os.path.realpath(os.path.dirname(__file__))

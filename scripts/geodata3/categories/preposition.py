@@ -1,6 +1,6 @@
-from geodata.addresses.config import address_config
-from geodata.categories.config import category_config
-from geodata.math.sampling import weighted_choice, cdf
+from geodata3.addresses.config import address_config
+from geodata3.categories.config import category_config
+from geodata3.math.sampling import weighted_choice, cdf
 
 
 class CategoryPreposition(object):

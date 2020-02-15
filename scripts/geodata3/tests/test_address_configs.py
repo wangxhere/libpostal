@@ -2,16 +2,16 @@ import re
 import six
 import unittest
 
-from geodata.addresses.entrances import *
-from geodata.addresses.floors import *
-from geodata.intersections.query import *
-from geodata.addresses.po_boxes import *
-from geodata.addresses.postcodes import *
-from geodata.addresses.staircases import *
-from geodata.addresses.units import *
-from geodata.categories.query import *
+from geodata3.addresses.entrances import *
+from geodata3.addresses.floors import *
+from geodata3.intersections.query import *
+from geodata3.addresses.po_boxes import *
+from geodata3.addresses.postcodes import *
+from geodata3.addresses.staircases import *
+from geodata3.addresses.units import *
+from geodata3.categories.query import *
 
-from geodata.math.floats import isclose
+from geodata3.math.floats import isclose
 
 
 invalid_phrase_re = re.compile(r'\b(None|False|True)\b')

@@ -4,8 +4,8 @@ import six
 from collections import defaultdict, Counter
 from itertools import islice
 
-from geodata.text.tokenize import tokenize, token_types
-from geodata.encoding import safe_encode
+from geodata3.text.tokenize import tokenize, token_types
+from geodata3.encoding import safe_encode
 
 
 class FrequentPhraseExtractor(object):

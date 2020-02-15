@@ -1,7 +1,7 @@
 import operator
 import six
 
-from geodata.graph.topsort import topsort
+from geodata3.graph.topsort import topsort
 from functools import reduce
 
 

@@ -31,8 +31,8 @@ from .scanner import Scanner
 from .unicode_data import *
 from .unicode_properties import *
 from .unicode_paths import CLDR_DIR
-from geodata.encoding import safe_decode, safe_encode
-from geodata.string_utils import NUM_CODEPOINTS, wide_unichr, wide_ord
+from geodata3.encoding import safe_decode, safe_encode
+from geodata3.string_utils import NUM_CODEPOINTS, wide_unichr, wide_ord
 
 CLDR_TRANSFORMS_DIR = os.path.join(CLDR_DIR, 'common', 'transforms')
 

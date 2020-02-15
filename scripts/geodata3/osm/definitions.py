@@ -4,7 +4,7 @@ import six
 
 from collections import defaultdict
 
-from geodata.graph.topsort import topsort
+from geodata3.graph.topsort import topsort
 
 this_dir = os.path.realpath(os.path.dirname(__file__))
 

@@ -9,27 +9,27 @@ import re
 import six
 import yaml
 
-from geodata.addresses.units import Unit
-from geodata.address_expansions.abbreviations import abbreviate
-from geodata.address_expansions.address_dictionaries import address_phrase_dictionaries
-from geodata.address_expansions.gazetteers import street_types_gazetteer, unit_types_gazetteer, toponym_abbreviations_gazetteer
-from geodata.address_formatting.formatter import AddressFormatter
-from geodata.addresses.components import AddressComponents
-from geodata.countries.constants import Countries
-from geodata.countries.names import country_names
-from geodata.encoding import safe_decode, safe_encode
-from geodata.i18n.languages import get_country_languages
-from geodata.i18n.word_breaks import ideographic_scripts
-from geodata.language_id.disambiguation import UNKNOWN_LANGUAGE, get_string_script
-from geodata.math.sampling import cdf, weighted_choice
-from geodata.openaddresses.config import openaddresses_config
-from geodata.places.config import place_config
-from geodata.postal_codes.phrases import PostalCodes
-from geodata.text.tokenize import tokenize
-from geodata.text.token_types import token_types
-from geodata.text.utils import is_numeric, is_numeric_strict
+from geodata3.addresses.units import Unit
+from geodata3.address_expansions.abbreviations import abbreviate
+from geodata3.address_expansions.address_dictionaries import address_phrase_dictionaries
+from geodata3.address_expansions.gazetteers import street_types_gazetteer, unit_types_gazetteer, toponym_abbreviations_gazetteer
+from geodata3.address_formatting.formatter import AddressFormatter
+from geodata3.addresses.components import AddressComponents
+from geodata3.countries.constants import Countries
+from geodata3.countries.names import country_names
+from geodata3.encoding import safe_decode, safe_encode
+from geodata3.i18n.languages import get_country_languages
+from geodata3.i18n.word_breaks import ideographic_scripts
+from geodata3.language_id.disambiguation import UNKNOWN_LANGUAGE, get_string_script
+from geodata3.math.sampling import cdf, weighted_choice
+from geodata3.openaddresses.config import openaddresses_config
+from geodata3.places.config import place_config
+from geodata3.postal_codes.phrases import PostalCodes
+from geodata3.text.tokenize import tokenize
+from geodata3.text.token_types import token_types
+from geodata3.text.utils import is_numeric, is_numeric_strict
 
-from geodata.csv_utils import tsv_string, unicode_csv_reader
+from geodata3.csv_utils import tsv_string, unicode_csv_reader
 
 OPENADDRESSES_FORMAT_DATA_TAGGED_FILENAME = 'openaddresses_formatted_addresses_tagged.tsv'
 OPENADDRESSES_FORMAT_DATA_FILENAME = 'openaddresses_formatted_addresses.tsv'

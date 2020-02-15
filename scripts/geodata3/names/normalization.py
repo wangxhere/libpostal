@@ -3,7 +3,7 @@ import re
 import six
 import yaml
 
-from geodata.encoding import safe_decode
+from geodata3.encoding import safe_decode
 
 this_dir = os.path.realpath(os.path.dirname(__file__))
 

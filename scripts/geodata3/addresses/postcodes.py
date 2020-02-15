@@ -1,5 +1,5 @@
-from geodata.addresses.numbering import NumberedComponent
-from geodata.encoding import safe_decode
+from geodata3.addresses.numbering import NumberedComponent
+from geodata3.encoding import safe_decode
 
 
 class PostCode(NumberedComponent):

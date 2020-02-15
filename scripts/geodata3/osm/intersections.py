@@ -14,10 +14,10 @@ from itertools import groupby
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.coordinates.conversion import latlon_to_decimal
-from geodata.file_utils import ensure_dir
-from geodata.osm.extract import *
-from geodata.encoding import safe_decode, safe_encode
+from geodata3.coordinates.conversion import latlon_to_decimal
+from geodata3.file_utils import ensure_dir
+from geodata3.osm.extract import *
+from geodata3.encoding import safe_decode, safe_encode
 
 DEFAULT_INTERSECTIONS_FILENAME = 'intersections.json'
 

@@ -13,14 +13,14 @@ from bisect import bisect_left
 from collections import defaultdict, OrderedDict
 from itertools import combinations
 
-from geodata.coordinates.conversion import latlon_to_decimal
-from geodata.encoding import safe_encode, safe_decode
-from geodata.file_utils import ensure_dir
-from geodata.graph.scc import strongly_connected_components
-from geodata.i18n.languages import osm_admin1_ids
-from geodata.math.floats import isclose
-from geodata.osm.definitions import osm_definitions
-from geodata.osm.extract import *
+from geodata3.coordinates.conversion import latlon_to_decimal
+from geodata3.encoding import safe_encode, safe_decode
+from geodata3.file_utils import ensure_dir
+from geodata3.graph.scc import strongly_connected_components
+from geodata3.i18n.languages import osm_admin1_ids
+from geodata3.math.floats import isclose
+from geodata3.osm.definitions import osm_definitions
+from geodata3.osm.extract import *
 
 
 class OSMPolygonReader(object):

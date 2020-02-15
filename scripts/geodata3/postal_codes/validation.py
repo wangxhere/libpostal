@@ -1,6 +1,6 @@
 import re
-from geodata.i18n.google import google_i18n
-from geodata.postal_codes.config import postal_codes_config
+from geodata3.i18n.google import google_i18n
+from geodata3.postal_codes.config import postal_codes_config
 
 
 class PostcodeRegexes(object):

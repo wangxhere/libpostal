@@ -56,24 +56,24 @@ shapely_geos_logger.setLevel(logging.CRITICAL)
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.address_expansions.abbreviations import abbreviate
-from geodata.address_expansions.gazetteers import *
-from geodata.addresses.components import AddressComponents
-from geodata.coordinates.conversion import *
-from geodata.language_id.disambiguation import *
-from geodata.language_id.sample import sample_random_language
-from geodata.i18n.languages import *
-from geodata.metro_stations.reverse_geocode import MetroStationReverseGeocoder
-from geodata.neighborhoods.reverse_geocode import NeighborhoodReverseGeocoder
-from geodata.osm.extract import *
-from geodata.osm.formatter import OSMAddressFormatter
-from geodata.places.reverse_geocode import PlaceReverseGeocoder
-from geodata.polygons.language_polys import *
-from geodata.polygons.reverse_geocode import *
-from geodata.i18n.unicode_paths import DATA_DIR
+from geodata3.address_expansions.abbreviations import abbreviate
+from geodata3.address_expansions.gazetteers import *
+from geodata3.addresses.components import AddressComponents
+from geodata3.coordinates.conversion import *
+from geodata3.language_id.disambiguation import *
+from geodata3.language_id.sample import sample_random_language
+from geodata3.i18n.languages import *
+from geodata3.metro_stations.reverse_geocode import MetroStationReverseGeocoder
+from geodata3.neighborhoods.reverse_geocode import NeighborhoodReverseGeocoder
+from geodata3.osm.extract import *
+from geodata3.osm.formatter import OSMAddressFormatter
+from geodata3.places.reverse_geocode import PlaceReverseGeocoder
+from geodata3.polygons.language_polys import *
+from geodata3.polygons.reverse_geocode import *
+from geodata3.i18n.unicode_paths import DATA_DIR
 
-from geodata.csv_utils import *
-from geodata.file_utils import *
+from geodata3.csv_utils import *
+from geodata3.file_utils import *
 
 # Input files
 PLANET_ADDRESSES_INPUT_FILE = 'planet-addresses.osm'

@@ -5,7 +5,7 @@ import sys
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.phrases.extraction import FrequentPhraseExtractor
+from geodata3.phrases.extraction import FrequentPhraseExtractor
 
 if __name__ == '__main__':
     '''

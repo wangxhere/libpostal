@@ -6,12 +6,12 @@ import yaml
 
 from collections import defaultdict
 
-from geodata.configs.utils import nested_get, DoesNotExist, alternative_probabilities
-from geodata.encoding import safe_decode
-from geodata.math.floats import isclose
-from geodata.math.sampling import cdf, weighted_choice
+from geodata3.configs.utils import nested_get, DoesNotExist, alternative_probabilities
+from geodata3.encoding import safe_decode
+from geodata3.math.floats import isclose
+from geodata3.math.sampling import cdf, weighted_choice
 
-from geodata.encoding import safe_encode
+from geodata3.encoding import safe_encode
 
 this_dir = os.path.realpath(os.path.dirname(__file__))
 

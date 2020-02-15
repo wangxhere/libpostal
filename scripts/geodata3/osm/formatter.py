@@ -15,42 +15,42 @@ from six import itertools
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.address_expansions.gazetteers import *
-from geodata.address_expansions.abbreviations import abbreviate
-from geodata.address_formatting.aliases import Aliases
-from geodata.address_formatting.formatter import AddressFormatter
-from geodata.addresses.blocks import Block
-from geodata.addresses.config import address_config
-from geodata.addresses.components import AddressComponents
-from geodata.countries.constants import Countries
-from geodata.addresses.conscription_numbers import ConscriptionNumber
-from geodata.addresses.house_numbers import HouseNumber
-from geodata.boundaries.names import boundary_names
-from geodata.categories.config import category_config
-from geodata.categories.query import Category, NULL_CATEGORY_QUERY
-from geodata.chains.query import Chain, NULL_CHAIN_QUERY
-from geodata.coordinates.conversion import *
-from geodata.configs.utils import nested_get
-from geodata.countries.country_names import *
-from geodata.language_id.disambiguation import *
-from geodata.language_id.sample import INTERNET_LANGUAGE_DISTRIBUTION
-from geodata.i18n.languages import *
-from geodata.intersections.query import Intersection, IntersectionQuery
-from geodata.address_formatting.formatter import AddressFormatter
-from geodata.osm.components import osm_address_components
-from geodata.osm.definitions import osm_definitions
-from geodata.osm.extract import *
-from geodata.osm.intersections import OSMIntersectionReader
-from geodata.places.config import place_config
-from geodata.polygons.language_polys import *
-from geodata.polygons.reverse_geocode import *
-from geodata.postal_codes.phrases import PostalCodes
-from geodata.i18n.unicode_paths import DATA_DIR
-from geodata.text.tokenize import tokenize, token_types
-from geodata.text.utils import is_numeric
+from geodata3.address_expansions.gazetteers import *
+from geodata3.address_expansions.abbreviations import abbreviate
+from geodata3.address_formatting.aliases import Aliases
+from geodata3.address_formatting.formatter import AddressFormatter
+from geodata3.addresses.blocks import Block
+from geodata3.addresses.config import address_config
+from geodata3.addresses.components import AddressComponents
+from geodata3.countries.constants import Countries
+from geodata3.addresses.conscription_numbers import ConscriptionNumber
+from geodata3.addresses.house_numbers import HouseNumber
+from geodata3.boundaries.names import boundary_names
+from geodata3.categories.config import category_config
+from geodata3.categories.query import Category, NULL_CATEGORY_QUERY
+from geodata3.chains.query import Chain, NULL_CHAIN_QUERY
+from geodata3.coordinates.conversion import *
+from geodata3.configs.utils import nested_get
+from geodata3.countries.country_names import *
+from geodata3.language_id.disambiguation import *
+from geodata3.language_id.sample import INTERNET_LANGUAGE_DISTRIBUTION
+from geodata3.i18n.languages import *
+from geodata3.intersections.query import Intersection, IntersectionQuery
+from geodata3.address_formatting.formatter import AddressFormatter
+from geodata3.osm.components import osm_address_components
+from geodata3.osm.definitions import osm_definitions
+from geodata3.osm.extract import *
+from geodata3.osm.intersections import OSMIntersectionReader
+from geodata3.places.config import place_config
+from geodata3.polygons.language_polys import *
+from geodata3.polygons.reverse_geocode import *
+from geodata3.postal_codes.phrases import PostalCodes
+from geodata3.i18n.unicode_paths import DATA_DIR
+from geodata3.text.tokenize import tokenize, token_types
+from geodata3.text.utils import is_numeric
 
-from geodata.csv_utils import *
-from geodata.file_utils import *
+from geodata3.csv_utils import *
+from geodata3.file_utils import *
 
 
 OSM_PARSER_DATA_DEFAULT_CONFIG = os.path.join(this_dir, os.pardir, os.pardir, os.pardir,

@@ -5,9 +5,9 @@ import os
 import six
 import ujson as json
 
-from geodata.whosonfirst.client import WhosOnFirst
-from geodata.encoding import safe_encode
-from geodata.file_utils import ensure_dir
+from geodata3.whosonfirst.client import WhosOnFirst
+from geodata3.encoding import safe_encode
+from geodata3.file_utils import ensure_dir
 
 
 class WhosOnFirstCrawler(object):

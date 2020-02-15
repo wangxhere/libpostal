@@ -17,11 +17,11 @@ import sys
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.encoding import safe_decode
-from geodata.geonames.paths import *
+from geodata3.encoding import safe_decode
+from geodata3.geonames.paths import *
 
-from geodata.file_utils import *
-from geodata.log import *
+from geodata3.file_utils import *
+from geodata3.log import *
 
 from itertools import islice, chain
 

@@ -1,6 +1,6 @@
-from geodata.encoding import safe_encode, safe_decode
-from geodata.text import _tokenize
-from geodata.text.token_types import token_types
+from geodata3.encoding import safe_encode, safe_decode
+from geodata3.text import _tokenize
+from geodata3.text.token_types import token_types
 
 
 

@@ -10,9 +10,9 @@ from collections import Counter
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(this_dir, os.pardir, os.pardir)))
 
-from geodata.address_expansions.address_dictionaries import ADDRESS_EXPANSIONS_DIR
-from geodata.osm.extract import *
-from geodata.encoding import safe_encode
+from geodata3.address_expansions.address_dictionaries import ADDRESS_EXPANSIONS_DIR
+from geodata3.osm.extract import *
+from geodata3.encoding import safe_encode
 
 
 class VenueNames(object):

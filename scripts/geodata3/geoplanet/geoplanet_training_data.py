@@ -11,18 +11,18 @@ from collections import defaultdict
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.address_expansions.abbreviations import abbreviate
-from geodata.address_expansions.equivalence import equivalent
-from geodata.address_expansions.gazetteers import *
+from geodata3.address_expansions.abbreviations import abbreviate
+from geodata3.address_expansions.equivalence import equivalent
+from geodata3.address_expansions.gazetteers import *
 
-from geodata.address_formatting.formatter import AddressFormatter
+from geodata3.address_formatting.formatter import AddressFormatter
 
-from geodata.countries.names import country_names
-from geodata.postal_codes.validation import postcode_regexes
-from geodata.names.normalization import name_affixes
-from geodata.places.config import place_config
+from geodata3.countries.names import country_names
+from geodata3.postal_codes.validation import postcode_regexes
+from geodata3.names.normalization import name_affixes
+from geodata3.places.config import place_config
 
-from geodata.csv_utils import tsv_string, unicode_csv_reader
+from geodata3.csv_utils import tsv_string, unicode_csv_reader
 
 GEOPLANET_DB_FILE = 'geoplanet.db'
 GEOPLANET_FORMAT_DATA_TAGGED_FILENAME = 'geoplanet_formatted_addresses_tagged.tsv'

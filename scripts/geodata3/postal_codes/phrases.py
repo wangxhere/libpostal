@@ -1,9 +1,9 @@
 import random
 
-from geodata.configs.utils import alternative_probabilities
-from geodata.math.sampling import weighted_choice, cdf
-from geodata.postal_codes.config import postal_codes_config
-from geodata.postal_codes.validation import postcode_regexes
+from geodata3.configs.utils import alternative_probabilities
+from geodata3.math.sampling import weighted_choice, cdf
+from geodata3.postal_codes.config import postal_codes_config
+from geodata3.postal_codes.validation import postcode_regexes
 
 
 class PostalCodes(object):

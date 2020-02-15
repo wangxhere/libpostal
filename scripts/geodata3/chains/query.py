@@ -3,14 +3,14 @@ import six
 
 from collections import namedtuple
 
-from geodata.addresses.config import address_config
-from geodata.address_expansions.gazetteers import chains_gazetteer
-from geodata.categories.config import category_config
-from geodata.categories.preposition import CategoryPreposition
-from geodata.math.sampling import weighted_choice, cdf
-from geodata.text.normalize import normalized_tokens
-from geodata.text.tokenize import tokenize, token_types
-from geodata.encoding import safe_decode
+from geodata3.addresses.config import address_config
+from geodata3.address_expansions.gazetteers import chains_gazetteer
+from geodata3.categories.config import category_config
+from geodata3.categories.preposition import CategoryPreposition
+from geodata3.math.sampling import weighted_choice, cdf
+from geodata3.text.normalize import normalized_tokens
+from geodata3.text.tokenize import tokenize, token_types
+from geodata3.encoding import safe_decode
 
 ChainQuery = namedtuple('ChainQuery', 'name, prep, add_place_name, add_address')
 

@@ -6,9 +6,9 @@ import yaml
 
 from collections import Mapping
 
-from geodata.address_expansions.address_dictionaries import address_phrase_dictionaries
-from geodata.configs.utils import nested_get, DoesNotExist, recursive_merge, alternative_probabilities
-from geodata.math.sampling import cdf, check_probability_distribution
+from geodata3.address_expansions.address_dictionaries import address_phrase_dictionaries
+from geodata3.configs.utils import nested_get, DoesNotExist, recursive_merge, alternative_probabilities
+from geodata3.math.sampling import cdf, check_probability_distribution
 
 
 this_dir = os.path.realpath(os.path.dirname(__file__))

@@ -1,4 +1,4 @@
-from geodata.enum import Enum, EnumValue
+from geodata3.enum import Enum, EnumValue
 
 
 class token_types(Enum):

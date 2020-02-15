@@ -2,7 +2,7 @@ import six
 
 from collections import *
 from marisa_trie import BytesTrie
-from geodata.encoding import safe_encode, safe_decode
+from geodata3.encoding import safe_encode, safe_decode
 
 SENTINEL = None
 

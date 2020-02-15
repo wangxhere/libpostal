@@ -11,23 +11,23 @@ import sys
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.address_expansions.abbreviations import abbreviate
-from geodata.address_expansions.gazetteers import street_types_gazetteer, toponym_abbreviations_gazetteer
-from geodata.address_formatting.formatter import AddressFormatter
+from geodata3.address_expansions.abbreviations import abbreviate
+from geodata3.address_expansions.gazetteers import street_types_gazetteer, toponym_abbreviations_gazetteer
+from geodata3.address_formatting.formatter import AddressFormatter
 
-from geodata.addresses.components import AddressComponents
-from geodata.countries.constants import Countries
-from geodata.openaddresses.formatter import *
+from geodata3.addresses.components import AddressComponents
+from geodata3.countries.constants import Countries
+from geodata3.openaddresses.formatter import *
 
-from geodata.encoding import safe_decode
-from geodata.i18n.languages import get_country_languages
+from geodata3.encoding import safe_decode
+from geodata3.i18n.languages import get_country_languages
 
-from geodata.math.sampling import cdf, weighted_choice
+from geodata3.math.sampling import cdf, weighted_choice
 
-from geodata.places.config import place_config
-from geodata.text.utils import is_numeric, is_numeric_strict
+from geodata3.places.config import place_config
+from geodata3.text.utils import is_numeric, is_numeric_strict
 
-from geodata.csv_utils import unicode_csv_reader
+from geodata3.csv_utils import unicode_csv_reader
 
 OPENADDRESSES_UK_FORMAT_DATA_TAGGED_FILENAME = 'uk_openaddresses_formatted_addresses_tagged.tsv'
 OPENADDRESSES_UK_FORMAT_DATA_FILENAME = 'uk_openaddresses_formatted_addresses.tsv'

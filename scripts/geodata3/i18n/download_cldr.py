@@ -5,7 +5,7 @@ import sys
 import tempfile
 
 from .unicode_paths import CLDR_DIR
-from geodata.file_utils import ensure_dir
+from geodata3.file_utils import ensure_dir
 
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))

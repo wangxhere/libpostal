@@ -7,9 +7,9 @@ import ujson as json
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.polygons.index import *
-from geodata.i18n.languages import *
-from geodata.language_id.disambiguation import disambiguate_language, AMBIGUOUS_LANGUAGE, UNKNOWN_LANGUAGE, WELL_REPRESENTED_LANGUAGES
+from geodata3.polygons.index import *
+from geodata3.i18n.languages import *
+from geodata3.language_id.disambiguation import disambiguate_language, AMBIGUOUS_LANGUAGE, UNKNOWN_LANGUAGE, WELL_REPRESENTED_LANGUAGES
 
 country_language_dir = os.path.join(LANGUAGES_DIR, 'countries')
 regional_language_dir = os.path.join(LANGUAGES_DIR, 'regional')

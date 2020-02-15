@@ -1,6 +1,6 @@
-from geodata.addresses.config import address_config
-from geodata.addresses.numbering import NumericPhrase
-from geodata.math.sampling import weighted_choice
+from geodata3.addresses.config import address_config
+from geodata3.addresses.numbering import NumericPhrase
+from geodata3.math.sampling import weighted_choice
 
 
 class RelativeDirection(NumericPhrase):

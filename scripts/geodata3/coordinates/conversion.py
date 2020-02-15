@@ -18,8 +18,8 @@ Usage:
 import math
 import re
 
-from geodata.encoding import safe_decode
-from geodata.math.floats import isclose
+from geodata3.encoding import safe_decode
+from geodata3.math.floats import isclose
 
 beginning_re = re.compile('^[^0-9\-]+', re.UNICODE)
 end_re = re.compile('[^0-9]+$', re.UNICODE)

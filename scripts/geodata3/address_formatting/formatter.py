@@ -11,12 +11,12 @@ import yaml
 from collections import OrderedDict, defaultdict
 
 
-from geodata.address_formatting.aliases import Aliases
-from geodata.configs.utils import nested_get, recursive_merge
-from geodata.math.floats import isclose
-from geodata.math.sampling import weighted_choice, cdf
-from geodata.text.tokenize import tokenize, tokenize_raw, token_types
-from geodata.encoding import safe_decode
+from geodata3.address_formatting.aliases import Aliases
+from geodata3.configs.utils import nested_get, recursive_merge
+from geodata3.math.floats import isclose
+from geodata3.math.sampling import weighted_choice, cdf
+from geodata3.text.tokenize import tokenize, tokenize_raw, token_types
+from geodata3.encoding import safe_decode
 
 FORMATTER_GIT_REPO = 'https://github.com/OpenCageData/address-formatting'
 

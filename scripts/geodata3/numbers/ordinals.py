@@ -10,11 +10,11 @@ import yaml
 from collections import defaultdict
 from marisa_trie import BytesTrie
 
-from geodata.text.phrases import PhraseFilter
-from geodata.encoding import safe_encode, safe_decode
-from geodata.i18n.unicode_paths import DATA_DIR
+from geodata3.text.phrases import PhraseFilter
+from geodata3.encoding import safe_encode, safe_decode
+from geodata3.i18n.unicode_paths import DATA_DIR
 
-from geodata.numbers.numex import NUMEX_DATA_DIR
+from geodata3.numbers.numex import NUMEX_DATA_DIR
 
 
 class OrdinalSuffixTrie(PhraseFilter):

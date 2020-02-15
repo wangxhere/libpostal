@@ -7,7 +7,7 @@ import sys
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.osm.osm_address_training_data import WAYS_LANGUAGE_DATA_FILENAME, ADDRESS_LANGUAGE_DATA_FILENAME, ADDRESS_FORMAT_DATA_LANGUAGE_FILENAME, TOPONYM_LANGUAGE_DATA_FILENAME
+from geodata3.osm.osm_address_training_data import WAYS_LANGUAGE_DATA_FILENAME, ADDRESS_LANGUAGE_DATA_FILENAME, ADDRESS_FORMAT_DATA_LANGUAGE_FILENAME, TOPONYM_LANGUAGE_DATA_FILENAME
 
 LANGUAGES_ALL_FILE = 'languages.all'
 LANGAUGES_RANDOM_FILE = 'languages.random'

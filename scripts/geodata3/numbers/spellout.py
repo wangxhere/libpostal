@@ -7,7 +7,7 @@ import yaml
 
 from collections import defaultdict
 
-from geodata.numbers.numex import NUMEX_DATA_DIR
+from geodata3.numbers.numex import NUMEX_DATA_DIR
 
 
 class NumericExpressions(object):

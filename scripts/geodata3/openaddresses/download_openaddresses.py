@@ -12,10 +12,10 @@ from six.moves.urllib_parse import urljoin, quote_plus, unquote_plus
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.openaddresses.config import openaddresses_config
-from geodata.csv_utils import unicode_csv_reader
-from geodata.file_utils import ensure_dir, download_file, unzip_file, cd, remove_file
-from geodata.encoding import safe_encode, safe_decode
+from geodata3.openaddresses.config import openaddresses_config
+from geodata3.csv_utils import unicode_csv_reader
+from geodata3.file_utils import ensure_dir, download_file, unzip_file, cd, remove_file
+from geodata3.encoding import safe_encode, safe_decode
 
 BASE_OPENADDRESSES_DATA_URL = 'http://results.openaddresses.io'
 

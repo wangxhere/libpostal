@@ -29,9 +29,9 @@ from zipfile import ZipFile
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.encoding import safe_encode, safe_decode
-from geodata.file_utils import ensure_dir, download_file
-from geodata.string_utils import NUM_CODEPOINTS, wide_unichr
+from geodata3.encoding import safe_encode, safe_decode
+from geodata3.file_utils import ensure_dir, download_file
+from geodata3.string_utils import NUM_CODEPOINTS, wide_unichr
 
 from .cldr_languages import *
 from .download_cldr import download_cldr

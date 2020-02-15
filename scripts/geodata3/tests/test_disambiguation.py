@@ -10,8 +10,8 @@ import unittest
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.i18n.languages import init_languages, get_country_languages, get_regional_languages
-from geodata.language_id.disambiguation import disambiguate_language, street_types_gazetteer, UNKNOWN_LANGUAGE, AMBIGUOUS_LANGUAGE
+from geodata3.i18n.languages import init_languages, get_country_languages, get_regional_languages
+from geodata3.language_id.disambiguation import disambiguate_language, street_types_gazetteer, UNKNOWN_LANGUAGE, AMBIGUOUS_LANGUAGE
 
 
 country_test_cases = [

@@ -7,12 +7,12 @@ import six
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.address_expansions.abbreviations import abbreviate
-from geodata.coordinates.conversion import latlon_to_decimal
-from geodata.math.floats import isclose
-from geodata.osm.extract import parse_osm
-from geodata.points.index import PointIndex
-from geodata.encoding import safe_decode
+from geodata3.address_expansions.abbreviations import abbreviate
+from geodata3.coordinates.conversion import latlon_to_decimal
+from geodata3.math.floats import isclose
+from geodata3.osm.extract import parse_osm
+from geodata3.points.index import PointIndex
+from geodata3.encoding import safe_decode
 
 
 class PlaceReverseGeocoder(PointIndex):

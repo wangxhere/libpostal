@@ -9,13 +9,13 @@ sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir, os.pardir, 'python')))
 
-from geodata.address_expansions.gazetteers import *
-from geodata.encoding import safe_decode, safe_encode
-from geodata.string_utils import wide_iter, wide_ord
-from geodata.i18n.unicode_properties import get_chars_by_script, get_script_languages
-from geodata.text.normalize import normalized_tokens, normalize_string
-from geodata.text.tokenize import tokenize
-from geodata.text.token_types import token_types
+from geodata3.address_expansions.gazetteers import *
+from geodata3.encoding import safe_decode, safe_encode
+from geodata3.string_utils import wide_iter, wide_ord
+from geodata3.i18n.unicode_properties import get_chars_by_script, get_script_languages
+from geodata3.text.normalize import normalized_tokens, normalize_string
+from geodata3.text.tokenize import tokenize
+from geodata3.text.token_types import token_types
 
 WELL_REPRESENTED_LANGUAGES = set(['en', 'fr', 'it', 'de', 'nl', 'es', 'pt'])
 

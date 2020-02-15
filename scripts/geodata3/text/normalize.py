@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 import six
 
-from geodata.text import _normalize
-from geodata.text.token_types import token_types
+from geodata3.text import _normalize
+from geodata3.text.token_types import token_types
 
-from geodata.encoding import safe_decode
+from geodata3.encoding import safe_decode
 
 # String options
 NORMALIZE_STRING_LATIN_ASCII = _normalize.NORMALIZE_STRING_LATIN_ASCII

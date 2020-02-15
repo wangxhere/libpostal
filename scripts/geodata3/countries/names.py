@@ -12,9 +12,9 @@ from lxml import etree
 this_dir = os.path.realpath(os.path.dirname(__file__))
 sys.path.append(os.path.realpath(os.path.join(os.pardir, os.pardir)))
 
-from geodata.i18n.unicode_paths import CLDR_DIR
-from geodata.i18n.languages import *
-from geodata.encoding import safe_decode
+from geodata3.i18n.unicode_paths import CLDR_DIR
+from geodata3.i18n.languages import *
+from geodata3.encoding import safe_decode
 
 CLDR_MAIN_PATH = os.path.join(CLDR_DIR, 'common', 'main')
 

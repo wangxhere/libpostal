@@ -16,42 +16,42 @@ import pymorphy2_dicts_uk
 
 from collections import defaultdict, OrderedDict
 
-from geodata.address_formatting.formatter import AddressFormatter
+from geodata3.address_formatting.formatter import AddressFormatter
 
-from geodata.address_expansions.abbreviations import abbreviate
-from geodata.address_expansions.equivalence import equivalent
-from geodata.address_expansions.gazetteers import *
-from geodata.addresses.config import address_config
-from geodata.addresses.dependencies import ComponentDependencies
-from geodata.addresses.floors import Floor
-from geodata.addresses.entrances import Entrance
-from geodata.addresses.house_numbers import HouseNumber
-from geodata.addresses.metro_stations import MetroStation
-from geodata.addresses.numbering import Digits
-from geodata.addresses.po_boxes import POBox
-from geodata.addresses.postcodes import PostCode
-from geodata.addresses.staircases import Staircase
-from geodata.addresses.units import Unit
-from geodata.boundaries.names import boundary_names
-from geodata.configs.utils import nested_get, recursive_merge
-from geodata.coordinates.conversion import latlon_to_decimal
-from geodata.countries.constants import Countries
-from geodata.countries.names import *
-from geodata.encoding import safe_encode
-from geodata.graph.topsort import topsort
-from geodata.i18n.unicode_properties import *
-from geodata.language_id.disambiguation import *
-from geodata.language_id.sample import sample_random_language
-from geodata.math.floats import isclose
-from geodata.math.sampling import cdf, weighted_choice
-from geodata.names.normalization import name_affixes
-from geodata.osm.components import osm_address_components
-from geodata.places.config import place_config
-from geodata.polygons.reverse_geocode import OSMCountryReverseGeocoder
-from geodata.states.state_abbreviations import state_abbreviations
-from geodata.text.normalize import *
-from geodata.text.tokenize import tokenize, token_types
-from geodata.text.utils import is_numeric
+from geodata3.address_expansions.abbreviations import abbreviate
+from geodata3.address_expansions.equivalence import equivalent
+from geodata3.address_expansions.gazetteers import *
+from geodata3.addresses.config import address_config
+from geodata3.addresses.dependencies import ComponentDependencies
+from geodata3.addresses.floors import Floor
+from geodata3.addresses.entrances import Entrance
+from geodata3.addresses.house_numbers import HouseNumber
+from geodata3.addresses.metro_stations import MetroStation
+from geodata3.addresses.numbering import Digits
+from geodata3.addresses.po_boxes import POBox
+from geodata3.addresses.postcodes import PostCode
+from geodata3.addresses.staircases import Staircase
+from geodata3.addresses.units import Unit
+from geodata3.boundaries.names import boundary_names
+from geodata3.configs.utils import nested_get, recursive_merge
+from geodata3.coordinates.conversion import latlon_to_decimal
+from geodata3.countries.constants import Countries
+from geodata3.countries.names import *
+from geodata3.encoding import safe_encode
+from geodata3.graph.topsort import topsort
+from geodata3.i18n.unicode_properties import *
+from geodata3.language_id.disambiguation import *
+from geodata3.language_id.sample import sample_random_language
+from geodata3.math.floats import isclose
+from geodata3.math.sampling import cdf, weighted_choice
+from geodata3.names.normalization import name_affixes
+from geodata3.osm.components import osm_address_components
+from geodata3.places.config import place_config
+from geodata3.polygons.reverse_geocode import OSMCountryReverseGeocoder
+from geodata3.states.state_abbreviations import state_abbreviations
+from geodata3.text.normalize import *
+from geodata3.text.tokenize import tokenize, token_types
+from geodata3.text.utils import is_numeric
 
 
 this_dir = os.path.realpath(os.path.dirname(__file__))

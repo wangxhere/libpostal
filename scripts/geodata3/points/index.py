@@ -10,7 +10,7 @@ from collections import defaultdict, OrderedDict
 
 from leveldb import LevelDB
 
-from geodata.distance.haversine import haversine_distance
+from geodata3.distance.haversine import haversine_distance
 
 
 class PointIndex(object):
