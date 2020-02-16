@@ -261,7 +261,6 @@ rm $ID_WAYS_NODES_LATLON
 rm $ID_WAYS_O5M
 
 rm $ID_O5M
-rm $ID_O5M
 
 echo "Completed : `date`"
 
