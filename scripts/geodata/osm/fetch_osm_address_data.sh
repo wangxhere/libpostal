@@ -248,7 +248,7 @@ rm $ID_WATERWAYS_LATLONS
 echo "Filtering ways: `date`"
 ID_WAYS_O5M="id-ways.o5m"
 VALID_ROAD_TYPES="( highway=motorway or highway=motorway_link or highway=motorway_junction or highway=trunk or highway=trunk_link or highway=primary or highway=primary_link or highway=secondary or highway=secondary_link or highway=tertiary or highway=tertiary_link or highway=unclassified or highway=unclassified_link or highway=residential or highway=residential_link or highway=service or highway=service_link or highway=living_street or highway=pedestrian or highway=steps or highway=cycleway or highway=bridleway or highway=track or highway=road or ( highway=path and ( motorvehicle=yes or motorcar=yes ) ) )"
-osmfilter indonesia-latest.o5m --keep="name= and $VALID_ROAD_TYPES" --drop-relations --drop-author --drop-version -o=$ID_WAYS_O5M
+osmfilter $ID_O5M --keep="name= and $VALID_ROAD_TYPES" --drop-relations --drop-author --drop-version -o=$ID_WAYS_O5M
 ID_WAYS_NODES_LATLON="id-ways-nodes-latlons.o5m"
 osmconvert $ID_WAYS_O5M --max-objects=1000000000 --all-to-nodes -o=$ID_WAYS_NODES_LATLON
 # 10^15 is the offset used for ways and relations with --all-to-ndoes, extracts just the ways
