@@ -2,24 +2,24 @@ import os
 
 from setuptools import setup, Extension, find_packages
 
-RESOURCES_DIR = 'resources'
+RESOURCES_DIR = '../resources'
 
 
 def main():
     setup(
-        name='geodata3',
+        name='geodata',
         version='0.1',
         packages=find_packages(),
         ext_modules=[
-            Extension('geodata3.text._tokenize',
-                      sources=['geodata3/text/pytokenize.c'],
+            Extension('geodata.text._tokenize',
+                      sources=['geodata/text/pytokenize.c'],
                       libraries=['postal'],
                       include_dirs=['/usr/local/include'],
                       library_dirs=['/usr/local/lib'],
                       extra_compile_args=['-std=c99',
                                           '-Wno-unused-function'],
                       ),
-            Extension('geodata3.text._normalize',
+            Extension('geodata.text._normalize',
                       sources=['geodata/text/pynormalize.c'],
                       libraries=['postal'],
                       include_dirs=['/usr/local/include'],
@@ -33,7 +33,7 @@ def main():
             for d, _, filenames in os.walk(RESOURCES_DIR)
         ],
         package_data={
-            'geodata3': ['**/*.sh']
+            'geodata': ['**/*.sh']
         },
         include_package_data=True,
         zip_safe=False,
