@@ -9,3 +9,6 @@ def tokenize(s, whitespace=False):
     s = safe_encode(s)
     return [(safe_decode(s[start:start + length]), token_types.from_id(token_type))
             for start, length, token_type in _tokenize.tokenize(u, whitespace)]
+
+def tokenize_raw(s):
+    return _tokenize.tokenize(safe_decode(s))

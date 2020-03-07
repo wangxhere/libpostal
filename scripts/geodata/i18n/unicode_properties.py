@@ -298,7 +298,7 @@ def get_script_codes(all_scripts):
     seen_scripts = set()
 
     # Scripts in the CLDR repos use 4-letter ISO-15924 codes, so map those
-    for code, _, name, _, _, _ in csv.reader(script_codes_file, delimiter=';'):
+    for code, _, name, _, _, _, _ in csv.reader(script_codes_file, delimiter=';'):
         if name in all_scripts:
             script_codes[code] = name
             seen_scripts.add(name)

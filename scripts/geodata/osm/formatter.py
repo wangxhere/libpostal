@@ -31,7 +31,7 @@ from geodata.categories.query import Category, NULL_CATEGORY_QUERY
 from geodata.chains.query import Chain, NULL_CHAIN_QUERY
 from geodata.coordinates.conversion import *
 from geodata.configs.utils import nested_get
-from geodata.countries.country_names import *
+# from geodata.countries.country_names import *
 from geodata.language_id.disambiguation import *
 from geodata.language_id.sample import INTERNET_LANGUAGE_DISTRIBUTION
 from geodata.i18n.languages import *
@@ -1371,7 +1371,7 @@ class OSMAddressFormatter(object):
             formatted_tagged_file = open(os.path.join(out_dir, FORMATTED_PLACE_DATA_TAGGED_FILENAME), 'w')
             writer = csv.writer(formatted_tagged_file, 'tsv_no_quote')
         else:
-            formatted_tagged_file = open(os.path.join(out_dir, FORMATTED_PLACE_DATA_FILENAME), 'w')
+            formatted_file = open(os.path.join(out_dir, FORMATTED_PLACE_DATA_FILENAME), 'w')
             writer = csv.writer(formatted_file, 'tsv_no_quote')
 
         for node_id, tags, deps in parse_osm(infile):
