@@ -1,10 +1,18 @@
 # Inherited from autoconf / user-specified
 CFLAGS_CONF = @CFLAGS@
 CFLAGS_BASE = -Wall -Wextra -Wno-unused-function -Wformat -Werror=format-security -Winit-self -Wno-sign-compare -DLIBPOSTAL_DATA_DIR='"$(datadir)/libpostal"' -g $(CFLAGS_CONF)
+
+if IS_DEBUG
+CFLAGS_O0 = $(CFLAGS_BASE) -g -O0
+CFLAGS_O1 = $(CFLAGS_BASE) -g -O0
+CFLAGS_O2 = $(CFLAGS_BASE) -g -O0
+CFLAGS_O3 = $(CFLAGS_BASE) -g -O0
+else
 CFLAGS_O0 = $(CFLAGS_BASE) -O0
 CFLAGS_O1 = $(CFLAGS_BASE) -O1
 CFLAGS_O2 = $(CFLAGS_BASE) -O2
 CFLAGS_O3 = $(CFLAGS_BASE) -O3
+endif
 DEFAULT_INCLUDES = -I.. -I/usr/local/include
 
 # Wonky but have to be able to override the user's optimization level to compile the scanner

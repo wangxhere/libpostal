@@ -98,6 +98,7 @@ AC_ARG_ENABLE([data-download],
 
 
 AM_CONDITIONAL([DOWNLOAD_DATA], [test "x$DOWNLOAD_DATA" = "xtrue"])
+AM_CONDITIONAL([IS_DEBUG], [test "x$IS_DEBUG" = "xtrue"])
 
 AC_ARG_WITH(cflags-scanner-extra, [AS_HELP_STRING([--with-cflags-scanner-extra@<:@=VALUE@:>@], [Extra compilation options for scanner.c])],
 [

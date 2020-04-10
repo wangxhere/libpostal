@@ -1,8 +1,17 @@
 CFLAGS_BASE = -Wfloat-equal -Wpointer-arith -std=gnu99 -DLIBPOSTAL_DATA_DIR='"$(datadir)/libpostal"' -g
+
+if IS_DEBUG
+CFLAGS_O0 = $(CFLAGS_BASE) -O0
+CFLAGS_O1 = $(CFLAGS_BASE) -O0
+CFLAGS_O2 = $(CFLAGS_BASE) -O0
+CFLAGS_O3 = $(CFLAGS_BASE) -O0
+else
 CFLAGS_O0 = $(CFLAGS_BASE) -O0
 CFLAGS_O1 = $(CFLAGS_BASE) -O1
 CFLAGS_O2 = $(CFLAGS_BASE) -O2
 CFLAGS_O3 = $(CFLAGS_BASE) -O3
+endif
+
 DEFAULT_INCLUDES = -I.. -I/usr/local/include
 
 CFLAGS = $(CFLAGS_BASE)
