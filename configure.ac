@@ -8,6 +8,7 @@ m4_define(LIBPOSTAL_PATCH_VERSION, [0])
 AC_INIT([libpostal], LIBPOSTAL_MAJOR_VERSION.LIBPOSTAL_MINOR_VERSION.LIBPOSTAL_PATCH_VERSION)
 
 AC_CONFIG_MACRO_DIR([m4])
+AX_CHECK_ENABLE_DEBUG()
 
 AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_CONFIG_SRCDIR([src])
@@ -18,7 +19,6 @@ AC_CONFIG_HEADERS([config.h])
 # Checks for programs.
 AC_PROG_CC_C99
 AC_PROG_INSTALL
-
 LDFLAGS="$LDFLAGS -L/usr/local/lib"
 
 # Checks for libraries.
@@ -98,7 +98,6 @@ AC_ARG_ENABLE([data-download],
 
 
 AM_CONDITIONAL([DOWNLOAD_DATA], [test "x$DOWNLOAD_DATA" = "xtrue"])
-AM_CONDITIONAL([IS_DEBUG], [test "x$IS_DEBUG" = "xtrue"])
 
 AC_ARG_WITH(cflags-scanner-extra, [AS_HELP_STRING([--with-cflags-scanner-extra@<:@=VALUE@:>@], [Extra compilation options for scanner.c])],
 [
