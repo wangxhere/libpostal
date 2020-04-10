@@ -125,6 +125,10 @@ sudo make install
 sudo ldconfig
 ```
 
+To enable debug compile, use `–enable-debug` when running `./configure`.
+
+Specifying ’yes’ adds ’-g -O0’ to the compilation flags for all languages. Specifying ’info’ adds ’-g’ to the compilation flags. Specifying ’profile’ adds ’-g -pg’ to the compilation flags and ’-pg’ to the linking flags. Otherwise, nothing is added.
+
 libpostal has support for pkg-config, so you can use the pkg-config to print the flags needed to link your program against it:
 
 ```
